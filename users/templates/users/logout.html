@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{%  extends "blog/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <h1>Logged out</h1>
+    <div class="border-top pt-3">
+        <small class="text-muted">
+            LogIn with another account ? <a class='ml-2' href="{% url 'login' %}"> Log In </a>
+        </small>
+    </div>
+{% endblock content %}
